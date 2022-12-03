@@ -2,6 +2,7 @@ use clap::{Parser};
 use std::{fs::File, io::BufReader};
 
 mod day_one;
+mod day_two;
 
 #[derive(Parser)]
 #[command(version = "0.0.1", author = "Evan Merlock")]
@@ -23,6 +24,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     match (options.day, options.question) {
         (1, 1) => day_one::question_one(in_file)?,
         (1, 2) => day_one::question_two(in_file)?,
+        (2, 1) => day_two::question_one(in_file)?,
+        (2, 2) => day_two::question_two(in_file)?,
         _ => panic!("Invalid day/question combination!")
     };
 
