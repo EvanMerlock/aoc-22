@@ -14,6 +14,17 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "console": "externalTerminal"
+        },
+        {
+            "name": "Launch Day 4",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/aoc22.exe",
+            "args": ["--in-file=C:\\Users\\Evan\\Documents\\Programming\\aoc-22\\input\\day4.txt", "--day=4", "--question=1"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal"
         }
 
     ]
