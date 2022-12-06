@@ -34,6 +34,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         (4, 1) => day_four::question_one(in_file)?,
         (4, 2) => day_four::question_two(in_file)?,
         (5, 1) => day_five::question_one(in_file)?,
+        (5, 2) => day_five::question_two(in_file)?,
         _ => panic!("Invalid day/question combination!")
     };
 
